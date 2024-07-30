@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Management Dashboard</h1>
+    </header>
+
+    <main>
+        <section class="widget" id="date-time">
+            <h2>Current Date and Time</h2>
+            <p id="current-date"></p>
+            <p id="current-time"></p>
+        </section>
+
+        <section class="widget" id="task-manager">
+            <h2>Task Manager</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="New Task">
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+
+        <section class="widget" id="calendar">
+            <h2>Calendar and To-Do List</h2>
+            <form id="calendar-form">
+                <input type="date" id="calendar-date">
+                <input type="text" id="calendar-task" placeholder="To-Do for this date">
+                <button type="submit">Add To-Do</button>
+            </form>
+            <ul id="calendar-list"></ul>
+        </section>
+
+        <section class="widget" id="comments">
+            <h2>Task Comments</h2>
+            <form id="comment-form">
+                <textarea id="comment-input" placeholder="Enter your comment here"></textarea>
+                <button type="submit">Add Comment</button>
+            </form>
+            <ul id="comment-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
